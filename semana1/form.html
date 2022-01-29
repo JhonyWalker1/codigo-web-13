@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <!--Formularios-->
+    <form action="" method="">
+        <input type="text" 
+        placeholder="Ingrese su nombre"
+        name="nombre"
+        id="mi_nombre"
+        required />
+
+        <input type="text" name="ip" value="127.0.0.1" readonly/>
+        <input type="text" name="numero_hijos" value="5" disabled/>
+        <input type="text" placeholder="ingrese su dni"
+               name="dni" 
+               maxlength="8"
+               minlength="8"/>
+        <input type="number" step="5" placeholder="Pasos" min="0" max="75">
+
+        <input type="email"
+        placeholder="ingrese su email"
+        name="email"
+        id="mi_email"/>
+
+        <input type="password"
+        placeholder="Ingrese su password"
+        name="password"
+        id="mi_password">
+
+        <input type="submit" value="ingresar">
+    </form>
+</body>
+</html>
