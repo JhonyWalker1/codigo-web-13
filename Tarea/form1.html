@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <center>
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="5">
+                        <p> Registro de Usuario</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Ingresa tu nombre completo*:</td>
+                    <td><input type="text" name="nombre" required id="id_nombre" placeholder="Ingresa tu nombre"></td>
+                </tr>
+                <tr>
+                    <td>Dirección*: </td>
+                    <td><input type="text" name="direccion" id="id_direccion" required placeholder="Ingresa tu direccion"></td>
+                </tr>
+                <tr>
+                    <td>Fecha de nacimiento*:</td>
+                    <td><input type="date" name="fecha" id="id_nac" required></td>
+                </tr>
+                <tr>
+                    <td>Ingresa tu email*:</td>
+                    <td><input type="email" name="email" id="id_email" required></td>
+                </tr>
+                <tr>
+                    <td>País de residencia*:</td>
+                    <td><input list="ps" id="id_pais" name="pais" required>
+                        <datalist id="ps">
+                            <option value="Perú"></option>
+                            <option value="Brasil"></option>
+                            <option value="Colombia"></option>
+                            <option value="Bolivia"></option>
+                            <option value="Ecuador"></option>
+                            <option value="Argentina"></option>
+                            <option value="Chile"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tipo de Documento*:</td>
+                    <td><input list="dni" id="id_dni" name="documento" required>
+                        <datalist id="dni">
+                            <option value="DNI"></option>
+                            <option value="Carnet de extranjeria"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>N° de documento*:</td>
+                    <td><input type="text" maxlength="8" placeholder="Ingresa numero de ni" required></td>
+                </tr>
+                <tr>
+                    <td>Género: </td>
+                    <td><input type="radio" name="genero" required />Hombre
+                        <br />
+                        <input type="radio" name="genero"  required/>Mujer
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Celular*:</td>
+                    <td><input type="tel" placeholder="Celular" required></td>
+                </tr>
+                <tr>
+                    <td>Selecciona tu foto*</td>
+                    <td>
+                        <input type="file" accept="image/*" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Enviar Formulario" />
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <br>
+        <br>
+
+        
+    </center>
+</body>
+
+</html>
