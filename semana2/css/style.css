@@ -1,0 +1,146 @@
+body {
+    font-family: Helvetica;
+}
+
+/*h1{
+    background-color: #000;
+    color: #f01; 
+} */
+h2 {
+    background-color: #22e8dc;
+    color: green;
+}
+/*p {
+    background-color: yellow;
+    color: blue;
+} */
+a
+{
+    background-color: violet;
+    color: pink;
+}
+/* La forma correcta en la cual
+enlaces un id en css es unsando el # */
+
+/* un id se usa cuando se tiene un stylo
+especifico para un solo elemento*/
+#contenedor-uno {
+background-color : #09a
+}
+
+#contenedor-dos {
+    background-color: yellow;
+}
+
+/* para poder compartir stylos debemos usar clases
+'class' */
+ /* Para poder acceder a un elemento que tiene un class
+ usamos el . */
+ .contenedor-principal{
+     background-color: violet;
+     padding: 30px;
+ }
+
+ .btn-ingresar {
+     background-color: turquoise;
+     color: #fff;
+     padding: 10px;
+     border-radius: 8px;
+     border : none;
+ }
+
+ /*cuando se usan clases se puede compartir stylos */
+ .btn-registro {
+     font-size: 25px;
+     background-color: black;
+     color: yellow;
+     padding: 5px;
+     border-radius: 10px;
+     border: none;
+ }
+ .contenedor-form    {
+     /*border que cubra*/
+     border: 3px solid orange;
+     border-radius: 8px;
+ }
+ .contenedor-interno-form{
+     padding: 20px;
+     text-align: center;
+ }
+ .titulo-form {
+     color:  blue;
+     background-color: #fff;
+ }
+ .input-form{
+     padding: 10px;
+     border-radius: 8px;
+     border: 1px #000 solid; 
+     width: 400px;
+ }
+ .input-codigo{
+     width: 100px;
+ }
+ .input-numero{
+     width: 275px;
+ }
+ .input-button{
+     padding: 10px;
+     border-radius: 10px;
+     /*border: 3px solid gray;*/
+     width: 425px;
+     background-color: #000;
+     color: #fff;
+ }
+
+ /*pseudoclases */
+ /*Lo elementos tienen propiedad 
+ internas por ejemplo el hover
+
+ hover: es la propiedad que detecta cuando el mouse
+ esta sobre el elemento,
+ es decir que estos estilos se aplicaran
+ solo si el mouse esta sobre dicho elemento*/
+ .btn-ingresar:hover{
+     background-color: #f01;
+     color: #000;
+     /* Esta propiedad quita el subrayado */
+     text-decoration: none;
+     padding: 50px;
+
+ }
+ /* Los elementos como el tienen pseudoclases como
+ link
+ visited
+ hover
+ active */
+ /* Estas pseudoclases aplican para todos los elementos de html*/
+ div:hover{
+     background-color: #f01;
+ }
+
+ .contenedor-interno-form h1 {
+     border: 2px solid #000;
+ }
+ /* first.child*/
+ /* Busca el primer elemento
+ <h1> </h1 
+ <h1> </h1 
+ <h1> </h1 
+ <h1> </h1 
+ <h1> </h1 
+ <h1> </h1 */
+ h1:first-child{
+     color: purple;
+ }
+
+ input:first-of-type {
+     color: red;
+ }
+ h2:nth-child(4){
+     color: black;
+ }
+ /*
+ .contenedor-interno-form p:nth-child(2){
+     border: 1px red solid;
+ }
+ */
