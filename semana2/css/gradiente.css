@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.gradiente-uno {
+    
+    width: 300px;
+    height: 300px;
+    /* Vamos a iniciar con dos valores de tipo color */
+    background: linear-gradient(
+    45deg,    
+    #f01,
+     rgb(12, 64, 143),
+     #000,
+     #fff, 
+     green);
+}
+
+.gradiente-dos {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to left top, #000,#f01,#0f0);
+
+}
+
+.gradiente-tres{
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(
+        360deg,
+        rgb(167, 61, 61),
+        rgb(66, 66, 165),
+        #000,
+        #fff,
+        green
+    ),
+    linear-gradient(40deg, #000,red,#0f0,#ff0 25%),
+    linear-gradient(127deg, #000,#0f0,red,rgb(26, 182, 91)30%),
+    linear-gradient(300deg, yellow,orange 40%);
+}
+
+/*CSS imagenes */
+.img-yt {
+    border: solid;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.img-avatar {
+    /* va de 0 -1 */
+    /* 0 es casi transparente y 1 es normal */
+    opacity: 0.5;
+}
+
+.img-avatar-2 {
+    filter: grayscale(100%);
+}
+.img-avatar-3 {
+    filter: blur(5px);
+}
+.img-avatar-4 {
+    filter: sepia(100%);
+}
+.img-avatar-5 {
+    filter: invert(100%);
+}
+.img-avatar-6 {
+    filter: hue-rotate(90deg);
+}
+
+.img-avatar-7 {
+    filter: saturate(100%);
+}
+.img-avatar-8 {
+    filter: brightness(0.5);
+}
+.img-avatar-9 {
+    filter: opacity(50%);
+}

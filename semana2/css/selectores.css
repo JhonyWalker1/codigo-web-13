@@ -1,0 +1,32 @@
+/* "*" = Todo */
+*{
+    margin:  0;
+    padding: 0;
+}
+body {
+    font-family: Arial;
+}
+.contenedor p {
+    color: #f01;
+}
+.contenedor-2 h2 {
+    color: #aba;
+}
+.contenedor-tres a img {
+    border: 2px solid blue;
+}
+.menu-navegacion {
+    margin: 20px;
+}
+/*ul>li {
+    border: 2px solid cadetblue;
+} */
+.link-navegacion {
+    border: 2px solid cadetblue;
+}
+input[type="email"] {
+    background-color: brown;
+}
+input[type="password"]{
+    background-color: chocolate;
+}
