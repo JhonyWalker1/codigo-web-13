@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/** recordemos que en el mundo del desarollo un "*" es un todo */
+.grid-container > * {
+    padding: 20px;
+    border: solid;
+    text-align: center;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+     /** grid-template-areas */
+     /* sirve para asignar un nombre a las culumnas y filas */
+     grid-template-columns: 200px auto 200px;
+     grid-template-rows: 100px  auto 100px;
+     grid-template-areas: 
+     "header header header"
+     "navbar main sidebar"
+     /*"main main main"*/
+    /* "sidebar sidebar sidebar" */
+     "footer footer footer"
+     ;
+}
+.header{
+    background-color: aqua;
+    grid-area: header;
+}
+.nav{
+    background-color: blueviolet;
+    grid-area: navbar;
+}
+.aside {
+    background-color: burlywood;
+    grid-area: sidebar;
+}
+.container {
+    background-color: coral;
+    grid-area: main;
+}
+.footer{
+    background-color: deeppink;
+    grid-area: footer;
+}
