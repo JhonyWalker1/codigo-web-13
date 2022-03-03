@@ -1,6 +1,6 @@
 // alert("Hola mundo")
 
-/*
+
 const numero1=10;
 const numero2=20;
 let resultado=0;
@@ -80,7 +80,7 @@ if(numeroMultiplo % 2 === 0) {
 }
 if(numeroMultiplo %3 === 0) {
     console.log("Numero multiplo de 3", numeroMultiplo);
-} */
+} 
 
 
 //escriban un algoritmo que pida 2 numero usando promop e impriman el nro mayor
