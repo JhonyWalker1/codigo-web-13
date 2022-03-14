@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <title>Proyecto-Prueba1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+posicionarMenu();
+
+$(window).scroll(function() {    
+    posicionarMenu();
+});
+
+function posicionarMenu() {
+    var altura_del_header = $('.header').outerHeight(true);
+    var altura_del_menu = $('.menu').outerHeight(true);
+
+    if ($(window).scrollTop() >= altura_del_header){
+        $('.menu').addClass('fixed');
+        $('.wrapper').css('margin-top', (altura_del_menu) + 'px');
+    } else {
+        $('.menu').removeClass('fixed');
+        $('.wrapper').css('margin-top', '0');
+    }
+}
+
+</script>
+</head>
+
+<header class="navbar-dark bg-dark fixed-top menu ">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-evenly">
+            <div>
+            <a href="#" class="navbar-brand mb-0 h1">
+                <img src="./imagenes/logo_1.jpg" alt="" width="50" height="50">
+                aOndeVaosCausita</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+            <div>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contactanos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Encuesta</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Que hacer causita?</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Lima</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Cusco</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Ica</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+                <div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Go!</button>
+                </form>
+            </div>
+            
+        </div>
+    </nav>
+</header>
+
+<body>
+    <section class="container wrapper">
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem; ">
+                    <img src=" https://th.bing.com/th/id/OIP.CGupo0o4Y30PVqFWMv6MbgHaDw?w=313&h=177&c=7&r=0&o=5&dpr=1.25&pid=1.7 "
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Marcahuasi</h5>
+                        <p class="card-text">
+                            Marcahuasi, se considera un Centro de Activación Energético,
+                            un enorme Jardín de Enigmáticas Esculturas en Piedra.
+                            Una Montaña Sagrada que nos invita a conocerla y disfrutar
+                            de una experiencia fuera de serie.
+
+                        </p>
+                        <a href="#" class="btn btn-primary">Mas Información</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem; ">
+                    <img src=" https://th.bing.com/th/id/OIP.PDZRQMHvjT9aLKKKN68RDQHaEC?w=292&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Lunahuana</h5>
+                        <p class="card-text">
+                            Lunahuaná: descanso, sol y aventuras.
+                            Un fértil valle, rico en huertos y viñedos.
+                            Canotaje, en el río Cañete, trekking, ciclismo de montaña y paseos en cuatrimoto
+                            bodegas vitivinícolas, a degustar!!
+                        </p>
+                        <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem; ">
+                    <img src="https://th.bing.com/th/id/OIP.xJ0cHy2DDhMvvcUO348mgQHaEK?w=279&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Islas del Callao-Catamarán</h5>
+                        <p class="card-text">
+                            La aventura inicia en la Plaza Miguel Grau a pocos metros de la Fortaleza Real Felipe.
+                            Desde aquí podrás tomar las embarcaciones autorizados por el
+                            Servicio Nacional de Áreas Naturales Protegidas por el Estado (Sernanp),
+                            para partir rumbo a las islas de San Lorenzo, El Frontón, Cavinzas y Palomino.
+
+                        </p>
+                        <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem; ">
+                    <img src=" https://th.bing.com/th/id/OIP.63tCZ3hReu9ix3Hsfwu0-AHaE_?w=258&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7 "
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Fortaleza del Real Felipe</h5>
+                        <p class="card-text">
+                            El Real Felipe nace con motivo de proteger el puerto del Callao de los piratas y corsarios
+                            que constantemente amenazaban las costas de la capital.
+                            La fortaleza cuenta con siglos de historia entre sus muros y salones que albergaron
+                            prisioneros y traidores a la Corona española.
+
+                        </p>
+                        <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem; ">
+                    <img src="https://th.bing.com/th/id/OIP.lLgNUvUlMlX19x3b0ZqDfgHaC9?w=316&h=140&c=7&r=0&o=5&dpr=1.25&pid=1.7 "
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Montaña de Siete Colores</h5>
+                        <p class="card-text">
+                            Apreciaremos la flora y fauna típicos de los andes, entre los que resalta
+                            la presencia de auquenidos como llamas y Alpacas.
+                            Luego nos espera el mirador de Vinicunca o Montaña de Siete Colores (5080 msnm.)
+                            Momento perfecto para tomar las fotos del recuerdo y admirar el hermoso paisaje.
+
+                        </p>
+                        <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem; ">
+                    <img src="https://th.bing.com/th/id/OIP.hxtlzmUpRj0y3tkbyAc9TAHaDn?w=290&h=171&c=7&r=0&o=5&dpr=1.25&pid=1.7 "
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">SKY LODGE ADVENTURES SUITES </h5>
+                        <p class="card-text">
+                            Dormir entre las estrellas, despertar con los rayos del sol.
+
+                            Una experiencia inolvidable en la ciudad imperial de Cusco,
+                            claro sin dejar de lado la seguridad que ofecemos.
+                            Te atreves?, vamos agrégale un plus a tu estadía
+                        </p>
+                        <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem; ">
+                    <img src="  https://th.bing.com/th/id/OIP.H1m9AbEPAwDgJrtF_CYeMAEyDL?w=243&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Choquequirao</h5>
+                        <p class="card-text">
+                            Choquequirao es también conocida como la hermana sagrada de Machu Picchu.
+                            Se trata pues de un gran complejo arqueológico con edificios y terrazas,
+                            testimonio de los Incas conquistando las alturas de las montañas.
+                        </p>
+                        <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem; ">
+                    <img src=" https://th.bing.com/th/id/OIP.sqlftoF29tN5MEPUsNvxfQHaEM?w=317&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Machupicchu</h5>
+                        <p class="card-text">
+
+                            El Santuario histórico de Machu Picchu está considerado como una
+                            de las siete nuevas maravillas del mundo moderno y ha sido declarado
+                            como patrimonio de la humanidad en 1983.
+                            Los viajeros se acercan hasta Aguas Calientes para iniciar la ruta inca
+                            y disfrutar de esta experiencia!
+                        </p>
+                        <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
