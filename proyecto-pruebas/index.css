@@ -18,5 +18,5 @@
 }
 
 .img-card {
-    height: 20vh;
+    height: 20vh !important;
 }
