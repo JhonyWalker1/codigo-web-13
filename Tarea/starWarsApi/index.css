@@ -1,7 +1,7 @@
 .card-custom-body {
-    height: 45vh !important;
+    height: 40vh !important;
     background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-size:contain !important;
     background-position: center !important;
     background-color: rgba(0, 0, 0, 0.9) !important;
     display: flex;
@@ -12,4 +12,14 @@
   
   .link {
     cursor: pointer;
+    object-fit: contain;
+  }
+
+
+  .img-fluid{
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 500px;
+    max-height: 500px;
+    object-fit: contain;
   }

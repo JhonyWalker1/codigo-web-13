@@ -1,16 +1,20 @@
 const objetoActor = JSON.parse(localStorage.getItem("actor"));
 
 
+console.log("datos",objetoActor)
+
+
+
 const imgDetail = document.querySelector("#img-detail");
-const statusCharacter = document.querySelector("#status");
 const nameCharacter = document.querySelector("#name");
-
-const locationCharacter = document.querySelector("#location");
-const origin = document.querySelector("#origin");
-const episodes = document.querySelector("#episodes");
-const species = document.querySelector("#species");
-
-
-//imgDetail.src = objetoActor.image; 
+const nmGender = document.querySelector("#genero")
+const colorOjos= document.querySelector("#colorEyes")
+const numPeliculas = document.querySelector("#episodes")
+const actorEspec= document.querySelector("#peso")
 
 nameCharacter.innerHTML = objetoActor.name;
+imgDetail.src=objetoActor.image;
+nmGender.innerHTML=objetoActor.gender;
+colorOjos.innerHTML=objetoActor.eye_color;
+numPeliculas.innerHTML=objetoActor.films.length;
+actorEspec.innerHTML=objetoActor.height
